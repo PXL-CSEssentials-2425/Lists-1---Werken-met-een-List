@@ -1,0 +1,27 @@
+﻿<Window x:Class="Lists_1___Werken_met_een_List.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lists_1___Werken_met_een_List"
+        mc:Ignorable="d"
+        Title="Werken met een List" Height="338" Width="603">
+    <WrapPanel Margin="20">
+        <ListBox x:Name="namesListBox" HorizontalAlignment="Left" Height="250" VerticalAlignment="Top" Width="200" 
+                 FontSize="12"></ListBox>
+        <StackPanel Margin="20 0 20 0" VerticalAlignment="Center" Width="80">
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Margin" Value="0 0 0 5"></Setter>
+                </Style>
+            </StackPanel.Resources>
+            <Button x:Name="addListButton" Content="Add List" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="35" Click="addListButton_Click"/>
+            <Button x:Name="insertListButton" Content="Insert List" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="35" Click="insertListButton_Click"/>
+            <Button x:Name="deleteItemButton" Content="Delete item" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="35" Click="deleteItemButton_Click"/>
+            <Button x:Name="sortListButton" Content="Sort List" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="35" Click="sortListButton_Click"/>
+            <Button x:Name="toArrayButton" Content="To Array" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="35" Click="toArrayButton_Click"/>
+            <Button x:Name="findItemButton" Content="Find item" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="35" Click="findItemButton_Click"/>
+        </StackPanel>
+        <TextBox x:Name="resultTextBox" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="250" IsReadOnly="True" VerticalScrollBarVisibility="Auto"/>
+    </WrapPanel>
+</Window>
