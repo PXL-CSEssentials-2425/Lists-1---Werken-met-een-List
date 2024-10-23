@@ -2,9 +2,9 @@
 
 Werk met een list om de gegevens te bewerken. Vertrek vanuit de array
 *firstNames*:
-´´´
+```
 {"Wouter","Paul","Andreas","Niels","Kathleen","Paul","Silvia","Patricia"};
-´´´
+```
 
 -   Add List: voegt de List toe aan de listbox.
 
